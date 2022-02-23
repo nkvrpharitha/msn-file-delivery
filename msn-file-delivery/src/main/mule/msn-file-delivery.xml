@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<flow name="msn-file-deliveryFlow" doc:id="56de5eb7-73b4-44a4-8249-d328d3a527d4" >
+		<http:listener doc:name="Listener" doc:id="e7edf2a9-21f1-4aad-928a-0cd2578d78df" config-ref="http_listener_config" path="/msn/api/v1.0/asn"/>
+	</flow>
+</mule>
